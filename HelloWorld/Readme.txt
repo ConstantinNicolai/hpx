@@ -1,0 +1,1 @@
+1. Build-Verzeichnis anlegen2. Scripts-Verzeichnis anlegen mit load-env.sh mit	a. spack load gcc@11.3.0 --> nicht version 12!! (CUDA problem)	b. spack load hpx@1.9.03. Ins scripts-verzeichnis navigieren und „. load-env.sh“4. Ins build-verzeichnis navigieren5. „cmake ..“6. „cmake --build .“7. Programm starten 
