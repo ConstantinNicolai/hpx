@@ -10,7 +10,7 @@ a. Wichtig ist in load-env, dass "spack load gcc@11.3.0" auch drin steht sonst d
 8. "sbatch launch_simple_component"
 9. Output ist im scripts-Verzeichnis in "simple_component.txt"
 
---> bisher nur simple_component_local benchmark ausfŸhrbar, simple_component_remote leider noch nicht
+--> bisher nur simple_component_local benchmark ausfuehrbar, simple_component_remote leider noch nicht
 
 
 
