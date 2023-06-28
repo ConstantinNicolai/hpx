@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=component_hpx
+#SBATCH -o simple_component.txt
+
+./../build/simple_component_program
+
+
