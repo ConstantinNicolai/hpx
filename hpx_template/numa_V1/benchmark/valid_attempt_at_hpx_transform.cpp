@@ -30,6 +30,7 @@ int main()
     std::uniform_real_distribution<double> dist(0.0, 1.0);
 
     // Create a vector of vectors for each locality
+    //new segmented vector hpx
     std::vector<std::vector<std::vector<double>>> a_vectors(localities.size());
     std::vector<std::vector<std::vector<double>>> b_vectors(localities.size());
 
