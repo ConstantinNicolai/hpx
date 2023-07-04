@@ -1,0 +1,14 @@
+Could not find usable bootstrap parcelport.
+Preconfigured bootstrap parcelport: 'tcp'
+List of available parcelports:
+  mpi, priority: -100, can bootstrap: 1
+
+terminate called without an active exception
+srun: error: ziti-rome0: task 0: Exited with exit code 255
+Could not find usable bootstrap parcelport.
+Preconfigured bootstrap parcelport: 'tcp'
+List of available parcelports:
+  mpi, priority: -100, can bootstrap: 1
+
+srun: error: ziti-rome2: task 1: Exited with exit code 255
+terminate called without an active exception
