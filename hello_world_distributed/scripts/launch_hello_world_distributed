@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=hello_world_distributed_hpx
+#SBATCH -o hello_world_distributed_own.txt
+#SBATCH -p qdr
+#SBATCH -N 2
+
+spack load hpx
+mpirun hostname
+##mpirun hello_world_distributed --hpx:ignore-batch-env --hpx:threads 2
+mpirun ./../build/hello_world_distributed --hpx:ignore-batch-env --hpx:threads 2
+

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.18)
+project(my_hpx_project CXX)
+find_package(HPX REQUIRED)
+find_package(benchmark REQUIRED)
+add_executable(hello_world_distributed hello_world_distributed.cpp)
+target_link_libraries(hello_world_distributed HPX::hpx HPX::wrap_main HPX::iostreams_component benchmark::benchmark)
