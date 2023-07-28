@@ -9,8 +9,6 @@ project(HPXTEST CXX)
 find_package(benchmark REQUIRED)
 find_package(HPX REQUIRED)
 
-
 add_executable(my_hpx_program main.cpp)
-#target_compile_options(my_hpx_program PRIVATE -DHPX_WITH_MAX_CPU_COUNT=128)
 target_link_libraries(my_hpx_program HPX::hpx HPX::wrap_main HPX::iostreams_component)
 target_link_libraries(my_hpx_program benchmark::benchmark)

@@ -1,0 +1,12 @@
+ziti-qdr009.ziti.uni-heidelberg.de
+ziti-qdr009.ziti.uni-heidelberg.de
+ziti-qdr009.ziti.uni-heidelberg.de
+ziti-qdr010.ziti.uni-heidelberg.de
+hello world from OS-thread 0 on locality 0
+hello world from OS-thread 1 on locality 0
+hello world from OS-thread 1 on locality 2
+hello world from OS-thread 0 on locality 2
+hello world from OS-thread 1 on locality 3
+hello world from OS-thread 0 on locality 3
+hello world from OS-thread 0 on locality 1
+hello world from OS-thread 1 on locality 1

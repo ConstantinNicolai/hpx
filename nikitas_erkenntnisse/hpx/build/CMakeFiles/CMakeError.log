@@ -1,23 +1,23 @@
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/nfs/ntatsch/hpx/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_223e4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_223e4.dir/build.make CMakeFiles/cmTC_223e4.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b03e7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b03e7.dir/build.make CMakeFiles/cmTC_b03e7.dir/build
 gmake[1]: Entering directory `/home/nfs/ntatsch/hpx/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_223e4.dir/src.cxx.o
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_223e4.dir/src.cxx.o -c /home/nfs/ntatsch/hpx/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_223e4
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/clang-14.0.1/cmake-3.24.3-b6ltav2pqkwikx5s52rahm2nroar6kzi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_223e4.dir/link.txt --verbose=1
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++ -rdynamic CMakeFiles/cmTC_223e4.dir/src.cxx.o -o cmTC_223e4 
-CMakeFiles/cmTC_223e4.dir/src.cxx.o: In function `main':
+Building CXX object CMakeFiles/cmTC_b03e7.dir/src.cxx.o
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b03e7.dir/src.cxx.o -c /home/nfs/ntatsch/hpx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b03e7
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/cmake-3.23.1-lfjnbq6z2pt7fhsgc5rea53um22wjqyr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b03e7.dir/link.txt --verbose=1
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++ -rdynamic CMakeFiles/cmTC_b03e7.dir/src.cxx.o -o cmTC_b03e7 
+CMakeFiles/cmTC_b03e7.dir/src.cxx.o: In function `main':
 src.cxx:(.text+0x2d): undefined reference to `pthread_create'
 src.cxx:(.text+0x39): undefined reference to `pthread_detach'
 src.cxx:(.text+0x45): undefined reference to `pthread_cancel'
 src.cxx:(.text+0x56): undefined reference to `pthread_join'
 src.cxx:(.text+0x6a): undefined reference to `pthread_atfork'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [cmTC_223e4] Error 1
+gmake[1]: *** [cmTC_b03e7] Error 1
 gmake[1]: Leaving directory `/home/nfs/ntatsch/hpx/build/CMakeFiles/CMakeTmp'
-gmake: *** [cmTC_223e4/fast] Error 2
+gmake: *** [cmTC_b03e7/fast] Error 2
 
 
 Source file was:
@@ -44,21 +44,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/nfs/ntatsch/hpx/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0cd2a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0cd2a.dir/build.make CMakeFiles/cmTC_0cd2a.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1b653/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1b653.dir/build.make CMakeFiles/cmTC_1b653.dir/build
 gmake[1]: Entering directory `/home/nfs/ntatsch/hpx/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0cd2a.dir/CheckFunctionExists.cxx.o
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_0cd2a.dir/CheckFunctionExists.cxx.o -c /home/nfs/ntatsch/hpx/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_0cd2a
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/clang-14.0.1/cmake-3.24.3-b6ltav2pqkwikx5s52rahm2nroar6kzi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cd2a.dir/link.txt --verbose=1
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_0cd2a.dir/CheckFunctionExists.cxx.o -o cmTC_0cd2a  -lpthreads 
+Building CXX object CMakeFiles/cmTC_1b653.dir/CheckFunctionExists.cxx.o
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_1b653.dir/CheckFunctionExists.cxx.o -c /home/nfs/ntatsch/hpx/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_1b653
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/cmake-3.23.1-lfjnbq6z2pt7fhsgc5rea53um22wjqyr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b653.dir/link.txt --verbose=1
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_1b653.dir/CheckFunctionExists.cxx.o -o cmTC_1b653  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [cmTC_0cd2a] Error 1
+gmake[1]: *** [cmTC_1b653] Error 1
 gmake[1]: Leaving directory `/home/nfs/ntatsch/hpx/build/CMakeFiles/CMakeTmp'
-gmake: *** [cmTC_0cd2a/fast] Error 2
+gmake: *** [cmTC_1b653/fast] Error 2
 
 
-
-Detecting the CUDA native architecture(s) failed with the following output:
-  No CUDA devices found.
 
