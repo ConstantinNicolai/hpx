@@ -57,10 +57,10 @@ RM = /opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/cmake-3.23.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nfs/ntatsch/hpx
+CMAKE_SOURCE_DIR = /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nfs/ntatsch/hpx/build
+CMAKE_BINARY_DIR = /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nfs/ntatsch/hpx/build/CMakeFiles /home/nfs/ntatsch/hpx/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nfs/ntatsch/hpx/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_hpx_program
+# Target rules for targets named reduction
 
 # Build rule for target.
-my_hpx_program: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_hpx_program
-.PHONY : my_hpx_program
+reduction: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reduction
+.PHONY : reduction
 
 # fast build rule for target.
-my_hpx_program/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hpx_program.dir/build.make CMakeFiles/my_hpx_program.dir/build
-.PHONY : my_hpx_program/fast
+reduction/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduction.dir/build.make CMakeFiles/reduction.dir/build
+.PHONY : reduction/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+reduction.o: reduction.cpp.o
+.PHONY : reduction.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hpx_program.dir/build.make CMakeFiles/my_hpx_program.dir/main.cpp.o
-.PHONY : main.cpp.o
+reduction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduction.dir/build.make CMakeFiles/reduction.dir/reduction.cpp.o
+.PHONY : reduction.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+reduction.i: reduction.cpp.i
+.PHONY : reduction.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hpx_program.dir/build.make CMakeFiles/my_hpx_program.dir/main.cpp.i
-.PHONY : main.cpp.i
+reduction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduction.dir/build.make CMakeFiles/reduction.dir/reduction.cpp.i
+.PHONY : reduction.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+reduction.s: reduction.cpp.s
+.PHONY : reduction.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hpx_program.dir/build.make CMakeFiles/my_hpx_program.dir/main.cpp.s
-.PHONY : main.cpp.s
+reduction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduction.dir/build.make CMakeFiles/reduction.dir/reduction.cpp.s
+.PHONY : reduction.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... my_hpx_program"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... reduction"
+	@echo "... reduction.o"
+	@echo "... reduction.i"
+	@echo "... reduction.s"
 .PHONY : help
 
 

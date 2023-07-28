@@ -1,4 +1,4 @@
-# Install script for directory: /home/nfs/ntatsch/hpx
+# Install script for directory: /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nfs/ntatsch/hpx/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
