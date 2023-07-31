@@ -32,10 +32,14 @@ void benchReduceHPX(benchmark::State& state)
 	hpx::partitioned_vector<ValueType> X(state.range(0), layout);
 	
 	// perform uninitilized fill HPX style here
+	hpx::uninitilized_fill(X.begin(), X.end(), ValueType{1});
+	ValueType sum;
 
 	for(auto _ : state)
 	{
-		//perform reduction here
+		sum = 0;
+		// https://hpx-docs.stellar-group.org/latest/html/libs/core/algorithms/api/for_loop_reduction.html#_CPPv4I00EN3hpx12experimental9reductionEN3hpx8parallel6detail16reduction_helperI1TNSt7decay_tI2OpEEEER1TRK1TRR2Op
+		benchmark::DoNotOptimize(hpx::experimental::reduction(&sum, X, +));
 	}
 }
 
