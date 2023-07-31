@@ -1,33 +1,47 @@
 #include <hpx/local/algorithm.hpp>
 #include <hpx/local/future.hpp>
-#include <hpx/local/init.hpp>
+#include <hpx/hpx_main.hpp>
 #include <hpx/iostream.hpp>
 
 #include <benchmark/benchmark.h>
 
-int hpx_main(hpx::program_options::variables_map& vm)
-{
-	// extract command line argument
-    std::uint64_t n = vm["data-size"].as<std::uint64_t>();
+#include "allocator_adaptor.hpp"
 
-    // Say hello to the world!
-    std::cout << "Hello World! Command Line Input is number: " << n << std::flush;
-    return hpx::local::finalize();
+using ValueType = float;
+using ContainerType = std::vector<float, numa::no_init_allocator<float>>;
+
+static void Args(benchmark::internal::Benchmark* b) {
+  const int64_t lowerLimit = 3;
+  const int64_t upperLimit = 10;
+
+  for (auto x = lowerLimit; x <= upperLimit; ++x) {
+        b->Args({int64_t{1} << x});
+  }
+}
+
+void benchReduceHPX(benchmark::State& state)
+{
+	// Initilize container
+	ContainerType X(state.range(0));
+
+	// Figure out how many localities are used and which ones get how much data
+	std::vector<hpx::id_type> localities = hpx::find_all_localities();
+	size_t partSize = X.size() / localities.size();
+
+
+	
+	for(auto _ : state)
+	{
+		benchReduceHPX(state.range(0));
+	}
 }
 
 int main(int argc, char* argv[])
 {
-    // Configure application-specific options
-    hpx::program_options::options_description desc_commandline(
-        "Usage: " HPX_APPLICATION_STRING " [options]");
+	::benchmark::Initialize(&argc, argv);
+	::benchmark::RunSpecifiedBenchmarks();
 
-    desc_commandline.add_options()("data-size",
-        hpx::program_options::value<std::uint64_t>()->default_value(100),
-        "size of the data the opertions is to be performed on");
-
-    // Initialize and run HPX
-    hpx::local::init_params init_args;
-    init_args.desc_cmdline = desc_commandline;
-
-    return hpx::local::init(hpx_main, argc, argv, init_args);
+    return 0;
 }
+
+BENCHMARK(benchReduceHPX)->Apply(Args)->UseRealTime();

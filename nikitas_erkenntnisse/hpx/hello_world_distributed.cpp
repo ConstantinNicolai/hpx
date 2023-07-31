@@ -140,7 +140,7 @@ HPX_PLAIN_ACTION(hello_world_foreman, hello_world_foreman_action)
 //[hello_world_hpx_main
 // Here is the main entry point. By using the include 'hpx/hpx_main.hpp' HPX
 // will invoke the plain old C-main() as its first HPX thread.
-int main()
+int main(int argc, char* argv[])
 {
     // Get a list of all available localities.
     std::vector<hpx::id_type> localities = hpx::find_all_localities();

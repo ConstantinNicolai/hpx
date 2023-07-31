@@ -1,23 +1,23 @@
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8ee8f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8ee8f.dir/build.make CMakeFiles/cmTC_8ee8f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_073c8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_073c8.dir/build.make CMakeFiles/cmTC_073c8.dir/build
 gmake[1]: Entering directory `/home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8ee8f.dir/src.cxx.o
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8ee8f.dir/src.cxx.o -c /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_8ee8f
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/cmake-3.23.1-lfjnbq6z2pt7fhsgc5rea53um22wjqyr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ee8f.dir/link.txt --verbose=1
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++ -rdynamic CMakeFiles/cmTC_8ee8f.dir/src.cxx.o -o cmTC_8ee8f 
-CMakeFiles/cmTC_8ee8f.dir/src.cxx.o: In function `main':
+Building CXX object CMakeFiles/cmTC_073c8.dir/src.cxx.o
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_073c8.dir/src.cxx.o -c /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_073c8
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/cmake-3.23.1-lfjnbq6z2pt7fhsgc5rea53um22wjqyr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_073c8.dir/link.txt --verbose=1
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++ -rdynamic CMakeFiles/cmTC_073c8.dir/src.cxx.o -o cmTC_073c8 
+CMakeFiles/cmTC_073c8.dir/src.cxx.o: In function `main':
 src.cxx:(.text+0x2d): undefined reference to `pthread_create'
 src.cxx:(.text+0x39): undefined reference to `pthread_detach'
 src.cxx:(.text+0x45): undefined reference to `pthread_cancel'
 src.cxx:(.text+0x56): undefined reference to `pthread_join'
 src.cxx:(.text+0x6a): undefined reference to `pthread_atfork'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [cmTC_8ee8f] Error 1
+gmake[1]: *** [cmTC_073c8] Error 1
 gmake[1]: Leaving directory `/home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CMakeTmp'
-gmake: *** [cmTC_8ee8f/fast] Error 2
+gmake: *** [cmTC_073c8/fast] Error 2
 
 
 Source file was:
@@ -44,18 +44,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_deb31/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_deb31.dir/build.make CMakeFiles/cmTC_deb31.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_44a5b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_44a5b.dir/build.make CMakeFiles/cmTC_44a5b.dir/build
 gmake[1]: Entering directory `/home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_deb31.dir/CheckFunctionExists.cxx.o
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_deb31.dir/CheckFunctionExists.cxx.o -c /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_deb31
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/cmake-3.23.1-lfjnbq6z2pt7fhsgc5rea53um22wjqyr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_deb31.dir/link.txt --verbose=1
-/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_deb31.dir/CheckFunctionExists.cxx.o -o cmTC_deb31  -lpthreads 
+Building CXX object CMakeFiles/cmTC_44a5b.dir/CheckFunctionExists.cxx.o
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_44a5b.dir/CheckFunctionExists.cxx.o -c /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_44a5b
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/cmake-3.23.1-lfjnbq6z2pt7fhsgc5rea53um22wjqyr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44a5b.dir/link.txt --verbose=1
+/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/bin/g++  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_44a5b.dir/CheckFunctionExists.cxx.o -o cmTC_44a5b  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [cmTC_deb31] Error 1
+gmake[1]: *** [cmTC_44a5b] Error 1
 gmake[1]: Leaving directory `/home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles/CMakeTmp'
-gmake: *** [cmTC_deb31/fast] Error 2
+gmake: *** [cmTC_44a5b/fast] Error 2
 
 
 
