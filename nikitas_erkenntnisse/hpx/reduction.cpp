@@ -2,6 +2,7 @@
 #include <hpx/local/future.hpp>
 #include <hpx/hpx_main.hpp>
 #include <hpx/iostream.hpp>
+#include <hpx/include/partitioned_vector.hpp>
 
 #include <benchmark/benchmark.h>
 
@@ -21,18 +22,20 @@ static void Args(benchmark::internal::Benchmark* b) {
 
 void benchReduceHPX(benchmark::State& state)
 {
-	// Initilize container
-	ContainerType X(state.range(0));
+	HPX_REGISTER_PARTITIONED_VECTOR(ValueType);
 
-	// Figure out how many localities are used and which ones get how much data
-	std::vector<hpx::id_type> localities = hpx::find_all_localities();
-	size_t partSize = X.size() / localities.size();
+	std::vector<hpx::id_type> locs = hpx::find_all_localities()
+	std::size_t num_segments = locs.size();
 
-
+	// one segment for each localitiy, if more round robin is used
+	auto layout = hpx::container_layout(num_segments, locs);
+	hpx::partitioned_vector<ValueType> X(state.range(0), layout);
 	
+	// perform uninitilized fill HPX style here
+
 	for(auto _ : state)
 	{
-		benchReduceHPX(state.range(0));
+		//perform reduction here
 	}
 }
 
