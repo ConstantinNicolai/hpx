@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=partitioned_vector_hpx
+#SBATCH -p qdr
+#SBATCH -N 3
+
+spack load hpx
+mpirun hostname
+##mpirun hello_world_distributed --hpx:ignore-batch-env --hpx:threads 2
+REPS=3
+mpirun ./../build/main --benchmark_out_format=csv --benchmark_out=hello_out.csv  \
+                                      --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
+                                      --benchmark_min_time=0.001 
+
