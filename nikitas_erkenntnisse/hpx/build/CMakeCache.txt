@@ -460,7 +460,7 @@ HWLOC_INCLUDE_DIR:PATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-
 HWLOC_LIBRARY:FILEPATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib/libhwloc.so
 
 //Executable for running MPI programs.
-MPIEXEC_EXECUTABLE:FILEPATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.3-siuqdbdxfwja7gcfwppbd226vlepauf7/bin/mpiexec
+MPIEXEC_EXECUTABLE:FILEPATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.5-tjbl7qm4ixvxi3akpd3hvjseterpbavi/bin/mpiexec
 
 //Maximum number of processors available to run MPI applications.
 MPIEXEC_MAX_NUMPROCS:STRING=32
@@ -480,10 +480,10 @@ MPIEXEC_PREFLAGS:STRING=
 MPI_CXX_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for CXX
-MPI_CXX_COMPILER:FILEPATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.3-siuqdbdxfwja7gcfwppbd226vlepauf7/bin/mpicxx
+MPI_CXX_COMPILER:FILEPATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.5-tjbl7qm4ixvxi3akpd3hvjseterpbavi/bin/mpicxx
 
 //MPI CXX compiler wrapper include directories
-MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.3-siuqdbdxfwja7gcfwppbd226vlepauf7/include
+MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.5-tjbl7qm4ixvxi3akpd3hvjseterpbavi/include
 
 //MPI CXX compilation definitions
 MPI_CXX_COMPILE_DEFINITIONS:STRING=
@@ -492,19 +492,19 @@ MPI_CXX_COMPILE_DEFINITIONS:STRING=
 MPI_CXX_COMPILE_OPTIONS:STRING=-pthread
 
 //Path to a file.
-MPI_CXX_HEADER_DIR:PATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.3-siuqdbdxfwja7gcfwppbd226vlepauf7/include
+MPI_CXX_HEADER_DIR:PATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.5-tjbl7qm4ixvxi3akpd3hvjseterpbavi/include
 
 //MPI CXX libraries to link against
 MPI_CXX_LIB_NAMES:STRING=mpi
 
 //MPI CXX linker flags
-MPI_CXX_LINK_FLAGS:STRING=-Wl,-rpath,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -Wl,-rpath,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/lib64 -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.3-siuqdbdxfwja7gcfwppbd226vlepauf7/lib -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libfabric-1.14.1-7ypnjjzpoq24k6b2qw5ujq6276junspc/lib -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libevent-2.1.12-hg3shc57o7rxrkwclqnvatnsvmqpot7a/lib -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/pmix-4.1.2-bsrozqedqnsi42wieqzdbd2fneijbdei/lib -L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib -L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libfabric-1.14.1-7ypnjjzpoq24k6b2qw5ujq6276junspc/lib -L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libevent-2.1.12-hg3shc57o7rxrkwclqnvatnsvmqpot7a/lib -L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/pmix-4.1.2-bsrozqedqnsi42wieqzdbd2fneijbdei/lib -pthread
+MPI_CXX_LINK_FLAGS:STRING=-Wl,-rpath,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -Wl,-rpath,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-4.8.5/gcc-11.3.0-kmqzsfaj3ahrxqxsjgxyzzoetl3pu7wc/lib64 -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.5-tjbl7qm4ixvxi3akpd3hvjseterpbavi/lib -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libfabric-1.14.1-7ypnjjzpoq24k6b2qw5ujq6276junspc/lib -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libevent-2.1.12-hg3shc57o7rxrkwclqnvatnsvmqpot7a/lib -Wl,-rpath -Wl,/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/pmix-4.1.2-bsrozqedqnsi42wieqzdbd2fneijbdei/lib -Wl,-rpath -Wl,/usr/lib64 -L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib -L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libfabric-1.14.1-7ypnjjzpoq24k6b2qw5ujq6276junspc/lib -L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libevent-2.1.12-hg3shc57o7rxrkwclqnvatnsvmqpot7a/lib -L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/pmix-4.1.2-bsrozqedqnsi42wieqzdbd2fneijbdei/lib -L/usr/lib64 -pthread
 
 //If true, the MPI-2 C++ bindings are disabled using definitions.
 MPI_CXX_SKIP_MPICXX:BOOL=OFF
 
 //Location of the mpi library for MPI
-MPI_mpi_LIBRARY:FILEPATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.3-siuqdbdxfwja7gcfwppbd226vlepauf7/lib/libmpi.so
+MPI_mpi_LIBRARY:FILEPATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/openmpi-4.1.5-tjbl7qm4ixvxi3akpd3hvjseterpbavi/lib/libmpi.so
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -525,7 +525,7 @@ TBBMALLOC_PROXY_LIBRARY:FILEPATH=/usr/lib64/libtbbmalloc_proxy.so
 benchmark_DIR:PATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/clang-14.0.1/benchmark-1.7.1-kcgp5cdpcdbetd4uwros6a6bwntl4ajg/lib64/cmake/benchmark
 
 //Path to a library.
-pkgcfg_lib_PC_HWLOC_hwloc:FILEPATH=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib/libhwloc.so
+pkgcfg_lib_PC_HWLOC_hwloc:FILEPATH=/usr/lib64/libhwloc.so
 
 
 ########################
@@ -883,37 +883,37 @@ MPI_RESULT_CXX_test_mpi_MPICXX:INTERNAL=TRUE
 MPI_RESULT_CXX_test_mpi_normal:INTERNAL=TRUE
 //ADVANCED property for variable: MPI_mpi_LIBRARY
 MPI_mpi_LIBRARY-ADVANCED:INTERNAL=1
-PC_HWLOC_CFLAGS:INTERNAL=-I/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/include;-I/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libxml2-2.9.13-7nnbci4zjht2ysz4f7eepbwqmyxb5dbo/include/libxml2;-I/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libiconv-1.16-mitrywkqoivvtwzmosi2b23xqzpbvhr3/include;-I/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libpciaccess-0.16-vvrk633xjc25u2kka66l3zle7dcl5zep/include
+PC_HWLOC_CFLAGS:INTERNAL=-I/usr/include
 PC_HWLOC_CFLAGS_I:INTERNAL=
 PC_HWLOC_CFLAGS_OTHER:INTERNAL=
 PC_HWLOC_FOUND:INTERNAL=1
-PC_HWLOC_INCLUDEDIR:INTERNAL=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/include
-PC_HWLOC_INCLUDE_DIRS:INTERNAL=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/include;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libxml2-2.9.13-7nnbci4zjht2ysz4f7eepbwqmyxb5dbo/include/libxml2;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libiconv-1.16-mitrywkqoivvtwzmosi2b23xqzpbvhr3/include;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libpciaccess-0.16-vvrk633xjc25u2kka66l3zle7dcl5zep/include
-PC_HWLOC_LDFLAGS:INTERNAL=-L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib;-lhwloc
+PC_HWLOC_INCLUDEDIR:INTERNAL=/usr/include
+PC_HWLOC_INCLUDE_DIRS:INTERNAL=/usr/include
+PC_HWLOC_LDFLAGS:INTERNAL=-L/usr/lib64;-lhwloc
 PC_HWLOC_LDFLAGS_OTHER:INTERNAL=
-PC_HWLOC_LIBDIR:INTERNAL=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib
+PC_HWLOC_LIBDIR:INTERNAL=/usr/lib64
 PC_HWLOC_LIBRARIES:INTERNAL=hwloc
-PC_HWLOC_LIBRARY_DIRS:INTERNAL=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib
+PC_HWLOC_LIBRARY_DIRS:INTERNAL=/usr/lib64
 PC_HWLOC_LIBS:INTERNAL=
 PC_HWLOC_LIBS_L:INTERNAL=
 PC_HWLOC_LIBS_OTHER:INTERNAL=
 PC_HWLOC_LIBS_PATHS:INTERNAL=
 PC_HWLOC_MODULE_NAME:INTERNAL=hwloc
-PC_HWLOC_PREFIX:INTERNAL=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i
-PC_HWLOC_STATIC_CFLAGS:INTERNAL=-I/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/include;-I/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libxml2-2.9.13-7nnbci4zjht2ysz4f7eepbwqmyxb5dbo/include/libxml2;-I/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libiconv-1.16-mitrywkqoivvtwzmosi2b23xqzpbvhr3/include;-I/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libpciaccess-0.16-vvrk633xjc25u2kka66l3zle7dcl5zep/include
+PC_HWLOC_PREFIX:INTERNAL=/usr
+PC_HWLOC_STATIC_CFLAGS:INTERNAL=-I/usr/include
 PC_HWLOC_STATIC_CFLAGS_I:INTERNAL=
 PC_HWLOC_STATIC_CFLAGS_OTHER:INTERNAL=
-PC_HWLOC_STATIC_INCLUDE_DIRS:INTERNAL=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/include;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libxml2-2.9.13-7nnbci4zjht2ysz4f7eepbwqmyxb5dbo/include/libxml2;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libiconv-1.16-mitrywkqoivvtwzmosi2b23xqzpbvhr3/include;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libpciaccess-0.16-vvrk633xjc25u2kka66l3zle7dcl5zep/include
-PC_HWLOC_STATIC_LDFLAGS:INTERNAL=-L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib;-lhwloc;-lm;-L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libpciaccess-0.16-vvrk633xjc25u2kka66l3zle7dcl5zep/lib;-L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libxml2-2.9.13-7nnbci4zjht2ysz4f7eepbwqmyxb5dbo/lib;-lxml2;-lpthread;-L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libxml2-2.9.13-7nnbci4zjht2ysz4f7eepbwqmyxb5dbo/lib;-lxml2;-L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/zlib-1.2.12-i2jfa5jxnfaaote4kfx6tuyznglwxttv/lib;-lz;-L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/xz-5.2.5-l3qr2h4rl6yvqezieetnau73x5hrb4et/lib;-llzma;-L/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libiconv-1.16-mitrywkqoivvtwzmosi2b23xqzpbvhr3/lib;-liconv;-lm;-lpciaccess
+PC_HWLOC_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include
+PC_HWLOC_STATIC_LDFLAGS:INTERNAL=-L/usr/lib64;-lhwloc;-lm;-lnuma;-lltdl;-lpthread;-ldl
 PC_HWLOC_STATIC_LDFLAGS_OTHER:INTERNAL=
 PC_HWLOC_STATIC_LIBDIR:INTERNAL=
-PC_HWLOC_STATIC_LIBRARIES:INTERNAL=hwloc;m;xml2;pthread;xml2;z;lzma;iconv;m;pciaccess
-PC_HWLOC_STATIC_LIBRARY_DIRS:INTERNAL=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libpciaccess-0.16-vvrk633xjc25u2kka66l3zle7dcl5zep/lib;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libxml2-2.9.13-7nnbci4zjht2ysz4f7eepbwqmyxb5dbo/lib;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libxml2-2.9.13-7nnbci4zjht2ysz4f7eepbwqmyxb5dbo/lib;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/zlib-1.2.12-i2jfa5jxnfaaote4kfx6tuyznglwxttv/lib;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/xz-5.2.5-l3qr2h4rl6yvqezieetnau73x5hrb4et/lib;/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/libiconv-1.16-mitrywkqoivvtwzmosi2b23xqzpbvhr3/lib
+PC_HWLOC_STATIC_LIBRARIES:INTERNAL=hwloc;m;numa;ltdl;pthread;dl
+PC_HWLOC_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib64
 PC_HWLOC_STATIC_LIBS:INTERNAL=
 PC_HWLOC_STATIC_LIBS_L:INTERNAL=
 PC_HWLOC_STATIC_LIBS_OTHER:INTERNAL=
 PC_HWLOC_STATIC_LIBS_PATHS:INTERNAL=
-PC_HWLOC_VERSION:INTERNAL=2.7.1
+PC_HWLOC_VERSION:INTERNAL=1.11.8
 PC_HWLOC_hwloc_INCLUDEDIR:INTERNAL=
 PC_HWLOC_hwloc_LIBDIR:INTERNAL=
 PC_HWLOC_hwloc_PREFIX:INTERNAL=
@@ -974,5 +974,5 @@ __pkg_config_checked_PC_HWLOC:INTERNAL=1
 __pkg_config_checked_PC_TBBMALLOC:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_HWLOC_hwloc
 pkgcfg_lib_PC_HWLOC_hwloc-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/opt/asc/pub/spack/opt/spack/linux-centos7-x86_64_v2/gcc-11.3.0/hwloc-2.7.1-icqv7u4ydyppp6ilajuwoqnobbgglm2i/lib
+prefix_result:INTERNAL=/usr/lib64
 

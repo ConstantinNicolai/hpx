@@ -129,6 +129,19 @@ reduction/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduction.dir/build.make CMakeFiles/reduction.dir/build
 .PHONY : reduction/fast
 
+#=============================================================================
+# Target rules for targets named transform
+
+# Build rule for target.
+transform: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transform
+.PHONY : transform
+
+# fast build rule for target.
+transform/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/build
+.PHONY : transform/fast
+
 reduction.o: reduction.cpp.o
 .PHONY : reduction.o
 
@@ -153,6 +166,30 @@ reduction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduction.dir/build.make CMakeFiles/reduction.dir/reduction.cpp.s
 .PHONY : reduction.cpp.s
 
+transform.o: transform.cpp.o
+.PHONY : transform.o
+
+# target to build an object file
+transform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/transform.cpp.o
+.PHONY : transform.cpp.o
+
+transform.i: transform.cpp.i
+.PHONY : transform.i
+
+# target to preprocess a source file
+transform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/transform.cpp.i
+.PHONY : transform.cpp.i
+
+transform.s: transform.cpp.s
+.PHONY : transform.s
+
+# target to generate assembly for a file
+transform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/transform.cpp.s
+.PHONY : transform.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... reduction"
+	@echo "... transform"
 	@echo "... reduction.o"
 	@echo "... reduction.i"
 	@echo "... reduction.s"
+	@echo "... transform.o"
+	@echo "... transform.i"
+	@echo "... transform.s"
 .PHONY : help
 
 

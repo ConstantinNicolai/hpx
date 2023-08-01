@@ -3,15 +3,17 @@
 #include <hpx/hpx_main.hpp>
 #include <hpx/iostream.hpp>
 #include <hpx/include/partitioned_vector.hpp>
+#include <hpx/runtime_distributed/find_localities.hpp>
 #include <hpx/include/runtime.hpp>
 #include <hpx/memory.hpp>
+#include <hpx/modules/program_options.hpp>
+#include <hpx/config.hpp>
+#include <hpx/algorithm.hpp>
+#include <hpx/hpx.hpp>
 
 #include <benchmark/benchmark.h>
 
-#include "allocator_adaptor.hpp"
-
 using ValueType = float;
-using ContainerType = std::vector<float, numa::no_init_allocator<float>>;
 
 static void Args(benchmark::internal::Benchmark* b) {
   const int64_t lowerLimit = 3;
@@ -22,29 +24,153 @@ static void Args(benchmark::internal::Benchmark* b) {
   }
 }
 
-HPX_REGISTER_PARTITIONED_VECTOR(ValueType);
+#include <cstddef>
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+#include <random>
+#include <string>
+#include <vector>
+
+///////////////////////////////////////////////////////////////////////////////
+// Define the vector types to be used.
+HPX_REGISTER_PARTITIONED_VECTOR(ValueType)
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Define a view for a partitioned vector which exposes the part of the vector
+// which is located on the current locality.
+//
+// This view does not own the data and relies on the partitioned_vector to be
+// available during the full lifetime of the view.
+//
+template <typename T>
+struct partitioned_vector_view
+{
+private:
+    typedef typename hpx::partitioned_vector<T>::iterator global_iterator;
+    typedef typename hpx::partitioned_vector<T>::const_iterator
+        const_global_iterator;
+
+    typedef hpx::traits::segmented_iterator_traits<global_iterator> traits;
+    typedef hpx::traits::segmented_iterator_traits<const_global_iterator>
+        const_traits;
+
+    typedef typename traits::local_segment_iterator local_segment_iterator;
+
+public:
+    typedef typename traits::local_raw_iterator iterator;
+    typedef typename const_traits::local_raw_iterator const_iterator;
+    typedef T value_type;
+
+public:
+    explicit partitioned_vector_view(hpx::partitioned_vector<T>& data)
+      : segment_iterator_(data.segment_begin(hpx::get_locality_id()))
+    {
+#if defined(HPX_DEBUG)
+        // this view assumes that there is exactly one segment per locality
+        typedef typename traits::local_segment_iterator local_segment_iterator;
+        local_segment_iterator sit = segment_iterator_;
+        HPX_ASSERT(
+            ++sit == data.segment_end(hpx::get_locality_id()));    // NOLINT
+#endif
+    }
+
+    iterator begin()
+    {
+        return traits::begin(segment_iterator_);
+    }
+    iterator end()
+    {
+        return traits::end(segment_iterator_);
+    }
+
+    const_iterator begin() const
+    {
+        return const_traits::begin(segment_iterator_);
+    }
+    const_iterator end() const
+    {
+        return const_traits::end(segment_iterator_);
+    }
+    const_iterator cbegin() const
+    {
+        return begin();
+    }
+    const_iterator cend() const
+    {
+        return end();
+    }
+
+    value_type& operator[](std::size_t index)
+    {
+        return (*segment_iterator_)[index];
+    }
+    value_type const& operator[](std::size_t index) const
+    {
+        return (*segment_iterator_)[index];
+    }
+
+    std::size_t size() const
+    {
+        return (*segment_iterator_).size();
+    }
+
+private:
+    local_segment_iterator segment_iterator_;
+};
+
+///////////////////////////////////////////////////////////////////////////////
 
 void benchReduceHPX(benchmark::State& state)
 {
+    unsigned int size = state.range(0);
 
-	std::vector<hpx::id_type> locs = hpx::find_all_localities();
-	std::size_t num_segments = locs.size();
+    char const* const example_vector_name = "partitioned_vector_spmd_reduction";
+    char const* const example_latch_name  = "latch_spmd_reduction";
 
-	// one segment for each localitiy, if more round robin is used
-	auto layout = hpx::container_layout(num_segments, locs);
-	hpx::partitioned_vector<ValueType> X(state.range(0), layout);
-	
-	// perform uninitilized fill HPX style here
-	hpx::uninitialized_fill(X.begin(), X.end(), ValueType{1});
+    {
+        // create vector on one locality, connect to it from all others
+        hpx::partitioned_vector<ValueType> v;
+        hpx::distributed::latch l;
+
+        if (0 == hpx::get_locality_id())
+        {
+            std::vector<hpx::id_type> localities = hpx::find_all_localities();
+
+			auto layout = hpx::container_layout(localities);
+            v = hpx::partitioned_vector<ValueType>(size, layout);
+            v.register_as(example_vector_name);
+
+            l = hpx::distributed::latch(localities.size());
+            l.register_as(example_latch_name);
+        }
+        else
+        {
+            hpx::future<void> f1 = v.connect_to(example_vector_name);
+            l.connect_to(example_latch_name);
+            f1.get();
+        }
+
+        // fill the vector with ones
+        partitioned_vector_view<ValueType> view(v);
+        hpx::generate(hpx::execution::par, view.begin(), view.end(),
+            [&]() { return ValueType{1}; });
+
+        // apply reduction operation
+		ValueType sum;
+
+		auto plusOperator = [](int a, int b) { return a+b; };
+		//hpx::experimental::reduction(&sum, X, plusOperator);
+
+        // Wait for all localities to reach this point.
+        l.arrive_and_wait();
+    }
+
 	ValueType sum;
-	auto plusOperator = [](int a, int b) { return a+b; };
-
 	for(auto _ : state)
 	{
 		sum = 0;
-		// https://hpx-docs.stellar-group.org/latest/html/libs/core/algorithms/api/for_loop_reduction.html#_CPPv4I00EN3hpx12experimental9reductionEN3hpx8parallel6detail16reduction_helperI1TNSt7decay_tI2OpEEEER1TRK1TRR2Op
-		//benchmark::DoNotOptimize();
-		hpx::experimental::reduction(&sum, X, plusOperator);
 	}
 }
 

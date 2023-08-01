@@ -10,5 +10,9 @@ find_package(benchmark REQUIRED)
 find_package(HPX REQUIRED)
 
 add_executable(reduction reduction.cpp)
-target_link_libraries(reduction HPX::hpx HPX::wrap_main HPX::iostreams_component)
+target_link_libraries(reduction HPX::hpx HPX::wrap_main HPX::iostreams_component HPX::partitioned_vector_component)
 target_link_libraries(reduction benchmark::benchmark)
+
+add_executable(transform transform.cpp)
+target_link_libraries(transform HPX::hpx HPX::wrap_main HPX::iostreams_component HPX::partitioned_vector_component)
+target_link_libraries(transform benchmark::benchmark)

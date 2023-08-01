@@ -1,9 +1,0 @@
-ziti-qdr009.ziti.uni-heidelberg.de
-ziti-qdr009.ziti.uni-heidelberg.de
-ziti-qdr009.ziti.uni-heidelberg.de
-ziti-qdr010.ziti.uni-heidelberg.de
-test
-Hello World! Command Line Input is number: 100test
-Hello World! Command Line Input is number: 100test
-Hello World! Command Line Input is number: 100test
-Hello World! Command Line Input is number: 100

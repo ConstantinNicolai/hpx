@@ -1,0 +1,22 @@
+ziti-rome0.ziti.uni-heidelberg.de
+2023-08-01T23:18:35+02:00
+Running ./../build/transform
+Run on (128 X 2000 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x64)
+  L1 Instruction 32 KiB (x64)
+  L2 Unified 512 KiB (x64)
+  L3 Unified 16384 KiB (x16)
+Load Average: 0.09, 0.05, 0.05
+------------------------------------------------------------------------
+Benchmark                              Time             CPU   Iterations
+------------------------------------------------------------------------
+[0;32mbenchReduceHPX/8/real_time    [m[0;33m      26.7 us         26.7 us   [m[0;36m        48[m
+[m[0;32mbenchReduceHPX/16/real_time   [m[0;33m      27.3 us         27.3 us   [m[0;36m        49[m
+[m[0;32mbenchReduceHPX/32/real_time   [m[0;33m      28.8 us         28.8 us   [m[0;36m        46[m
+[m[0;32mbenchReduceHPX/64/real_time   [m[0;33m      32.3 us         32.3 us   [m[0;36m        43[m
+[m[0;32mbenchReduceHPX/128/real_time  [m[0;33m      38.2 us         38.2 us   [m[0;36m        36[m
+[m[0;32mbenchReduceHPX/256/real_time  [m[0;33m      50.6 us         50.6 us   [m[0;36m        27[m
+[m[0;32mbenchReduceHPX/512/real_time  [m[0;33m      76.5 us         76.5 us   [m[0;36m        18[m
+[m[0;32mbenchReduceHPX/1024/real_time [m[0;33m       126 us          126 us   [m[0;36m        10[m
+[m
