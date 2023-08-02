@@ -10,4 +10,4 @@
 
 spack load hpx
 mpirun hostname
-mpirun ./../build/reduction --hpx:threads 2
+mpirun ./../build/transform_test --hpx:threads 2 --hpx:ignore-batch-env

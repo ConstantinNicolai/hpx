@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build
 # The main recursive "all" target.
 all: CMakeFiles/reduction.dir/all
 all: CMakeFiles/transform.dir/all
+all: CMakeFiles/transform_test.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/reduction.dir/clean
 clean: CMakeFiles/transform.dir/clean
+clean: CMakeFiles/transform_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -127,6 +129,32 @@ transform: CMakeFiles/transform.dir/rule
 CMakeFiles/transform.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/clean
 .PHONY : CMakeFiles/transform.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/transform_test.dir
+
+# All Build rule for target.
+CMakeFiles/transform_test.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform_test.dir/build.make CMakeFiles/transform_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform_test.dir/build.make CMakeFiles/transform_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles --progress-num=5,6 "Built target transform_test"
+.PHONY : CMakeFiles/transform_test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/transform_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/transform_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nfs/ntatsch/hpx_git/hpx/nikitas_erkenntnisse/hpx/build/CMakeFiles 0
+.PHONY : CMakeFiles/transform_test.dir/rule
+
+# Convenience name for target.
+transform_test: CMakeFiles/transform_test.dir/rule
+.PHONY : transform_test
+
+# clean rule for target.
+CMakeFiles/transform_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform_test.dir/build.make CMakeFiles/transform_test.dir/clean
+.PHONY : CMakeFiles/transform_test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

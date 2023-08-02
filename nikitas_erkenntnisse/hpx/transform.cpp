@@ -1,6 +1,6 @@
 #include <hpx/local/algorithm.hpp>
 #include <hpx/local/future.hpp>
-#include <hpx/hpx_main.hpp>
+#include <hpx/hpx_init.hpp>
 #include <hpx/iostream.hpp>
 #include <hpx/include/partitioned_vector.hpp>
 #include <hpx/runtime_distributed/find_localities.hpp>
@@ -13,17 +13,6 @@
 
 #include <benchmark/benchmark.h>
 
-using ValueType = float;
-
-static void Args(benchmark::internal::Benchmark* b) {
-  const int64_t lowerLimit = 3;
-  const int64_t upperLimit = 10;
-
-  for (auto x = lowerLimit; x <= upperLimit; ++x) {
-        b->Args({int64_t{1} << x});
-  }
-}
-
 #include <cstddef>
 #include <cstdlib>
 #include <ctime>
@@ -31,6 +20,17 @@ static void Args(benchmark::internal::Benchmark* b) {
 #include <random>
 #include <string>
 #include <vector>
+
+using ValueType = float;
+
+static void Args(benchmark::internal::Benchmark* b) {
+  const int64_t lowerLimit = 15;
+  const int64_t upperLimit = 33;
+
+  for (auto x = lowerLimit; x <= upperLimit; ++x) {
+        b->Args({int64_t{1} << x});
+  }
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 // Define the vector types to be used.
@@ -124,7 +124,7 @@ private:
 
 void benchReduceHPX(benchmark::State& state)
 {
-	unsigned int size = state.range(0);
+	unsigned int size = 20;
  
     char const* const vector_name_1 =
         "partitioned_vector_1";
@@ -173,8 +173,16 @@ void benchReduceHPX(benchmark::State& state)
                       [&]() { return 2; });
         
         constexpr int alpha = 2;
+
+		for(auto _ : state)
+		{
+			// Transform the values of view1 by adding the corresponding values from view2
+			hpx::transform(hpx::execution::par, view1.begin(), view1.end(), view2.begin(), view1.begin(),
+					[](int v, int y) { return alpha * v + y; });
+        	l.arrive_and_wait();
+		}
         
-        /*
+		/*
         //print the transformed vector partitions from the specific locality
         for(int i = 0; i<view1.size(); i++){
             hpx::cout << "locality: " << hpx::get_locality_id() <<  ", Addition: " << view1[i] << "\n" << std::flush;
@@ -184,25 +192,55 @@ void benchReduceHPX(benchmark::State& state)
         for(int i = 0; i<v1.size(); i++){
             hpx::cout << "v1: " << v1[i] << "\n" << std::flush;
         }
-        */
-        
-        // Wait for all localities to reach this point.
-		for(auto _ : state)
-		{
-			// Transform the values of view1 by adding the corresponding values from view2
-			hpx::transform(hpx::execution::par, view1.begin(), view1.end(), view2.begin(), view1.begin(),
-					[](int v, int y) { return alpha * v + y; });
-        	l.arrive_and_wait();
-		}
+		*/
     }
 }
 
-int main(int argc, char* argv[])
+int hpx_main(int argc, char* argv[])
 {
 	::benchmark::Initialize(&argc, argv);
 	::benchmark::RunSpecifiedBenchmarks();
 
-    return 0;
+	std::cout << "Locality " << hpx::get_locality_id() << " is completly done" << std::endl;
+    return hpx::finalize();
+}
+
+
+int main(int argc, char* argv[])
+{
+    // add command line option which controls the random number generator seed
+    using namespace hpx::program_options;
+    options_description desc_commandline(
+        "Usage: " HPX_APPLICATION_STRING " [options]");
+
+    // clang-format off
+    desc_commandline.add_options()
+		("benchmark_time_unit", value<std::string>(),
+        "benchmark_time_unit")
+		("benchmark_out_format", value<std::string>(),
+        "benchmark_out_format")
+		("benchmark_out", value<std::string>(),
+        "benchmark_out")
+		("benchmark_report_aggregates_only", value<std::string>(),
+        "benchmark_report_aggregates_only")
+		("benchmark_repetitions", value<std::string>(),
+        "benchmark_repetitions")
+		("benchmark_min_time", value<std::string>(),
+        "benchmark_min_time")
+		("benchmark_min_warmup_time", value<std::string>(),
+        "benchmark_min_warmup_time")
+        ;
+    // clang-format on
+
+    // run hpx_main on all localities
+    std::vector<std::string> const cfg = {"hpx.run_hpx_main!=1"};
+
+    // Initialize and run HPX
+    hpx::init_params init_args;
+    init_args.desc_cmdline = desc_commandline;
+    init_args.cfg = cfg;
+
+    return hpx::init(argc, argv, init_args);
 }
 
 BENCHMARK(benchReduceHPX)->Apply(Args)->UseRealTime();

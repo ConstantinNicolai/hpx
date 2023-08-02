@@ -122,9 +122,9 @@ private:
 
 ///////////////////////////////////////////////////////////////////////////////
 
-void benchReduceHPX(benchmark::State& state)
+void benchReduceHPX(/*benchmark::State& state*/)
 {
-    unsigned int size = state.range(0);
+    unsigned int size = 5;//state.range(0);
 
     char const* const example_vector_name = "partitioned_vector_spmd_reduction";
     char const* const example_latch_name  = "latch_spmd_reduction";
@@ -158,28 +158,29 @@ void benchReduceHPX(benchmark::State& state)
             [&]() { return ValueType{1}; });
 
         // apply reduction operation
-		ValueType sum;
+		ValueType sum = 1;
+		ValueType val1 = 1;
 
-		auto plusOperator = [](int a, int b) { return a+b; };
-		//hpx::experimental::reduction(&sum, X, plusOperator);
-
+		hpx::experimental::reduction(sum, val1, [](ValueType a, ValueType b) { return a+b; });
+		std::cout << val1 << std::endl;
         // Wait for all localities to reach this point.
         l.arrive_and_wait();
     }
 
-	ValueType sum;
+	/*
 	for(auto _ : state)
 	{
 		sum = 0;
 	}
+	*/
 }
 
 int main(int argc, char* argv[])
 {
-	::benchmark::Initialize(&argc, argv);
-	::benchmark::RunSpecifiedBenchmarks();
-
+	//::benchmark::Initialize(&argc, argv);
+	//::benchmark::RunSpecifiedBenchmarks();
+	benchReduceHPX();
     return 0;
 }
 
-BENCHMARK(benchReduceHPX)->Apply(Args)->UseRealTime();
+//BENCHMARK(benchReduceHPX)->Apply(Args)->UseRealTime();
