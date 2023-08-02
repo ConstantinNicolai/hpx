@@ -142,19 +142,6 @@ transform/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/build
 .PHONY : transform/fast
 
-#=============================================================================
-# Target rules for targets named transform_test
-
-# Build rule for target.
-transform_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transform_test
-.PHONY : transform_test
-
-# fast build rule for target.
-transform_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform_test.dir/build.make CMakeFiles/transform_test.dir/build
-.PHONY : transform_test/fast
-
 reduction.o: reduction.cpp.o
 .PHONY : reduction.o
 
@@ -203,30 +190,6 @@ transform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/transform.cpp.s
 .PHONY : transform.cpp.s
 
-transform_test.o: transform_test.cpp.o
-.PHONY : transform_test.o
-
-# target to build an object file
-transform_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform_test.dir/build.make CMakeFiles/transform_test.dir/transform_test.cpp.o
-.PHONY : transform_test.cpp.o
-
-transform_test.i: transform_test.cpp.i
-.PHONY : transform_test.i
-
-# target to preprocess a source file
-transform_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform_test.dir/build.make CMakeFiles/transform_test.dir/transform_test.cpp.i
-.PHONY : transform_test.cpp.i
-
-transform_test.s: transform_test.cpp.s
-.PHONY : transform_test.s
-
-# target to generate assembly for a file
-transform_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform_test.dir/build.make CMakeFiles/transform_test.dir/transform_test.cpp.s
-.PHONY : transform_test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -237,16 +200,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... reduction"
 	@echo "... transform"
-	@echo "... transform_test"
 	@echo "... reduction.o"
 	@echo "... reduction.i"
 	@echo "... reduction.s"
 	@echo "... transform.o"
 	@echo "... transform.i"
 	@echo "... transform.s"
-	@echo "... transform_test.o"
-	@echo "... transform_test.i"
-	@echo "... transform_test.s"
 .PHONY : help
 
 

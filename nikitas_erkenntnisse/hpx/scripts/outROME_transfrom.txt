@@ -2,15 +2,558 @@ ziti-qdr008.ziti.uni-heidelberg.de
 ziti-qdr012.ziti.uni-heidelberg.de
 ziti-qdr010.ziti.uni-heidelberg.de
 ziti-qdr009.ziti.uni-heidelberg.de
+ziti-qdr011.ziti.uni-heidelberg.de
 ziti-qdr013.ziti.uni-heidelberg.de
 ziti-qdr015.ziti.uni-heidelberg.de
-ziti-qdr011.ziti.uni-heidelberg.de
 ziti-qdr014.ziti.uni-heidelberg.de
---------------------------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-mpirun noticed that process rank 4 with PID 55039 on node ziti-qdr012 exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-6 total processes killed (some possibly by mpirun during cleanup)
+2023-08-02T14:13:34+02:00
+Running ./../build/transform
+Run on (32 X 2600 MHz CPU s)
+CPU Caches:
+  L1 Data 16 KiB (x32)
+  L1 Instruction 64 KiB (x16)
+  L2 Unified 2048 KiB (x16)
+  L3 Unified 6144 KiB (x8)
+Load Average: 0.43, 0.51, 0.47
+2023-08-02T14:13:34+02:00
+Running ./../build/transform
+Run on (32 X 1400 MHz CPU s)
+CPU Caches:
+  L1 Data 16 KiB (x32)
+  L1 Instruction 64 KiB (x16)
+  L2 Unified 2048 KiB (x16)
+  L3 Unified 6144 KiB (x8)
+Load Average: 1.43, 1.22, 1.05
+2023-08-02T14:13:34+02:00
+Running ./../build/transform
+Run on (32 X 1400 MHz CPU s)
+CPU Caches:
+  L1 Data 16 KiB (x32)
+  L1 Instruction 64 KiB (x16)
+  L2 Unified 2048 KiB (x16)
+  L3 Unified 6144 KiB (x8)
+Load Average: 0.47, 0.72, 0.67
+2023-08-02T14:13:34+02:00
+Running ./../build/transform
+Run on (32 X 1400 MHz CPU s)
+CPU Caches:
+  L1 Data 16 KiB (x32)
+  L1 Instruction 64 KiB (x16)
+  L2 Unified 2048 KiB (x16)
+  L3 Unified 6144 KiB (x8)
+Load Average: 0.22, 0.56, 0.67
+2023-08-02T14:13:34+02:00
+Running ./../build/transform
+Run on (32 X 1400 MHz CPU s)
+CPU Caches:
+  L1 Data 16 KiB (x32)
+  L1 Instruction 64 KiB (x16)
+  L2 Unified 2048 KiB (x16)
+  L3 Unified 6144 KiB (x8)
+Load Average: 0.27, 0.65, 0.75
+2023-08-02T14:13:34+02:00
+Running ./../build/transform
+Run on (32 X 1400 MHz CPU s)
+CPU Caches:
+  L1 Data 16 KiB (x32)
+  L1 Instruction 64 KiB (x16)
+  L2 Unified 2048 KiB (x16)
+  L3 Unified 6144 KiB (x8)
+Load Average: 0.40, 0.65, 0.64
+2023-08-02T14:13:34+02:00
+Running ./../build/transform
+Run on (32 X 1400 MHz CPU s)
+CPU Caches:
+  L1 Data 16 KiB (x32)
+  L1 Instruction 64 KiB (x16)
+  L2 Unified 2048 KiB (x16)
+  L3 Unified 6144 KiB (x8)
+Load Average: 0.41, 0.73, 0.65
+2023-08-02T14:13:34+02:00
+Running ./../build/transform
+Run on (32 X 1400 MHz CPU s)
+CPU Caches:
+  L1 Data 16 KiB (x32)
+  L1 Instruction 64 KiB (x16)
+  L2 Unified 2048 KiB (x16)
+  L3 Unified 6144 KiB (x8)
+Load Average: 0.19, 0.55, 0.57
+-------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations
+-------------------------------------------------------------------------------------
+[0;32mbenchReduceHPX/32768/real_time_mean        [m[0;33m      3302 us         3302 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_median      [m[0;33m      2413 us         2413 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_stddev      [m[0;33m      1843 us         1843 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_cv          [m[0;33m     55.82 %         55.82 %    [m[0;36m        50[m
+[m-------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations
+-------------------------------------------------------------------------------------
+[0;32mbenchReduceHPX/32768/real_time_mean        [m[0;33m      5624 us         5625 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_median      [m[0;33m      4111 us         4112 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_stddev      [m[0;33m      4494 us         4495 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_cv          [m[0;33m     79.91 %         79.91 %    [m[0;36m        50[m
+[m-------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations
+-------------------------------------------------------------------------------------
+[0;32mbenchReduceHPX/32768/real_time_mean        [m[0;33m      5932 us         5931 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_median      [m[0;33m      5790 us         5790 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_stddev      [m[0;33m      4144 us         4144 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_cv          [m[0;33m     69.86 %         69.87 %    [m[0;36m        50[m
+[m-------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations
+-------------------------------------------------------------------------------------
+[0;32mbenchReduceHPX/32768/real_time_mean        [m[0;33m      6539 us         6539 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_median      [m[0;33m      7044 us         7044 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_stddev      [m[0;33m      3622 us         3621 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_cv          [m[0;33m     55.39 %         55.39 %    [m[0;36m        50[m
+[m-------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations
+-------------------------------------------------------------------------------------
+[0;32mbenchReduceHPX/32768/real_time_mean        [m[0;33m      6810 us         6809 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_median      [m[0;33m      6727 us         6727 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_stddev      [m[0;33m      3916 us         3916 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_cv          [m[0;33m     57.50 %         57.51 %    [m[0;36m        50[m
+[m-------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations
+-------------------------------------------------------------------------------------
+[0;32mbenchReduceHPX/32768/real_time_mean        [m[0;33m      6979 us         6977 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_median      [m[0;33m      6717 us         6664 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_stddev      [m[0;33m      4262 us         4263 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_cv          [m[0;33m     61.07 %         61.09 %    [m[0;36m        50[m
+[m-------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations
+-------------------------------------------------------------------------------------
+[0;32mbenchReduceHPX/32768/real_time_mean        [m[0;33m      7614 us         7615 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_median      [m[0;33m      7742 us         7742 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_stddev      [m[0;33m      4504 us         4504 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_cv          [m[0;33m     59.15 %         59.15 %    [m[0;36m        50[m
+[m-------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations
+-------------------------------------------------------------------------------------
+[0;32mbenchReduceHPX/32768/real_time_mean        [m[0;33m      2893 us         2893 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_median      [m[0;33m      2326 us         2326 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_stddev      [m[0;33m      2300 us         2300 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/32768/real_time_cv          [m[0;33m     79.48 %         79.49 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_mean        [m[0;33m      4796 us         4796 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_median      [m[0;33m      3694 us         3694 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_stddev      [m[0;33m      3212 us         3211 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_cv          [m[0;33m     66.98 %         66.96 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_mean        [m[0;33m      9627 us         9628 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_median      [m[0;33m     10124 us        10125 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_stddev      [m[0;33m      6593 us         6594 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_cv          [m[0;33m     68.48 %         68.48 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_mean        [m[0;33m      9687 us         9687 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_median      [m[0;33m     10106 us        10106 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_stddev      [m[0;33m      6218 us         6218 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_cv          [m[0;33m     64.19 %         64.19 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_mean        [m[0;33m     10049 us        10049 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_median      [m[0;33m     10999 us        10999 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_stddev      [m[0;33m      5177 us         5177 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_cv          [m[0;33m     51.51 %         51.51 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_mean        [m[0;33m     10954 us        10955 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_median      [m[0;33m     10931 us        10932 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_stddev      [m[0;33m      5655 us         5657 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_cv          [m[0;33m     51.63 %         51.64 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_mean        [m[0;33m      8562 us         8563 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_median      [m[0;33m      7437 us         7437 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_stddev      [m[0;33m      5728 us         5729 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_cv          [m[0;33m     66.90 %         66.90 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_mean        [m[0;33m     10737 us        10734 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_median      [m[0;33m     11065 us        11064 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_stddev      [m[0;33m      5453 us         5452 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_cv          [m[0;33m     50.78 %         50.79 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_mean       [m[0;33m      6593 us         6592 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_median     [m[0;33m      4129 us         4129 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_stddev     [m[0;33m      4012 us         4010 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_cv         [m[0;33m     60.85 %         60.83 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_mean        [m[0;33m      5000 us         4998 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_median      [m[0;33m      3944 us         3944 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_stddev      [m[0;33m      2808 us         2804 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/65536/real_time_cv          [m[0;33m     56.17 %         56.11 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_mean       [m[0;33m     10834 us        10835 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_median     [m[0;33m     12323 us        12324 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_stddev     [m[0;33m      7961 us         7962 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_cv         [m[0;33m     73.48 %         73.48 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_mean       [m[0;33m     12261 us        12259 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_median     [m[0;33m     11815 us        11815 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_stddev     [m[0;33m      6568 us         6567 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_cv         [m[0;33m     53.57 %         53.57 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_mean       [m[0;33m     12039 us        12038 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_median     [m[0;33m     12032 us        12032 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_stddev     [m[0;33m      6015 us         6014 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_cv         [m[0;33m     49.96 %         49.96 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_mean       [m[0;33m     12050 us        12050 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_median     [m[0;33m     10860 us        10862 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_stddev     [m[0;33m      6590 us         6588 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_cv         [m[0;33m     54.69 %         54.67 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_mean       [m[0;33m     12427 us        12428 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_median     [m[0;33m     10992 us        10992 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_stddev     [m[0;33m      7509 us         7510 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_cv         [m[0;33m     60.43 %         60.43 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_mean       [m[0;33m      9959 us         9960 us   [m[0;36m        50[m
+[0;32mbenchReduceHPX/131072/real_time_mean       [m[0;33m     14391 us        14390 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_median     [m[0;33m     12424 us        12423 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_stddev     [m[0;33m      8965 us         8965 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_median     [m[0;33m      7807 us         7808 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_stddev     [m[0;33m      5829 us         5828 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_cv         [m[0;33m     58.52 %         58.52 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_cv         [m[0;33m     62.30 %         62.30 %    [m[0;36m        50[m
+[m[m[0;32mbenchReduceHPX/262144/real_time_mean       [m[0;33m     15205 us        15205 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_median     [m[0;33m     11423 us        11425 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_stddev     [m[0;33m     10619 us        10618 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_cv         [m[0;33m     69.83 %         69.83 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_mean       [m[0;33m     17094 us        17093 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_median     [m[0;33m     19839 us        19838 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_stddev     [m[0;33m      9746 us         9746 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_cv         [m[0;33m     57.01 %         57.02 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_mean       [m[0;33m     18052 us        18049 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_median     [m[0;33m     20772 us        20771 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_stddev     [m[0;33m      8604 us         8602 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_cv         [m[0;33m     47.66 %         47.66 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_mean       [m[0;33m     10998 us        10999 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_median     [m[0;33m      7777 us         7777 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_stddev     [m[0;33m      5856 us         5856 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_cv         [m[0;33m     53.25 %         53.25 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_mean       [m[0;33m     15059 us        15059 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_median     [m[0;33m      8331 us         8331 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_stddev     [m[0;33m      9939 us         9939 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_cv         [m[0;33m     66.00 %         66.00 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_mean       [m[0;33m     18575 us        18578 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_median     [m[0;33m     20378 us        20381 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_stddev     [m[0;33m     10517 us        10519 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_cv         [m[0;33m     56.62 %         56.62 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_mean       [m[0;33m      8397 us         8396 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_median     [m[0;33m      7357 us         7358 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_stddev     [m[0;33m      3226 us         3226 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/131072/real_time_cv         [m[0;33m     38.41 %         38.42 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_mean       [m[0;33m     22408 us        22406 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_median     [m[0;33m     21204 us        21203 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_stddev     [m[0;33m     15230 us        15229 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_cv         [m[0;33m     67.97 %         67.97 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_mean       [m[0;33m     25826 us        25827 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_median     [m[0;33m     23304 us        23306 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_stddev     [m[0;33m     18842 us        18840 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_cv         [m[0;33m     72.96 %         72.95 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_mean      [m[0;33m     20578 us        20577 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_median    [m[0;33m     14540 us        14540 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_stddev    [m[0;33m     11356 us        11354 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_cv        [m[0;33m     55.19 %         55.18 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_mean       [m[0;33m     29092 us        29089 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_median     [m[0;33m     36282 us        36281 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_stddev     [m[0;33m     14240 us        14238 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_cv         [m[0;33m     48.95 %         48.95 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_mean       [m[0;33m     25187 us        25187 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_median     [m[0;33m     14959 us        14915 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_stddev     [m[0;33m     13912 us        13914 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_cv         [m[0;33m     55.23 %         55.24 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_mean       [m[0;33m     30491 us        30488 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_median     [m[0;33m     38944 us        38943 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_stddev     [m[0;33m     13698 us        13696 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_cv         [m[0;33m     44.93 %         44.92 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_mean       [m[0;33m     31072 us        31072 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_median     [m[0;33m     37305 us        37306 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_stddev     [m[0;33m     16688 us        16688 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_cv         [m[0;33m     53.71 %         53.71 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_mean       [m[0;33m     31924 us        31920 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_median     [m[0;33m     38089 us        38087 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_stddev     [m[0;33m     17463 us        17460 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_cv         [m[0;33m     54.70 %         54.70 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_mean       [m[0;33m     15599 us        15599 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_median     [m[0;33m     14050 us        14058 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_stddev     [m[0;33m      5765 us         5765 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/262144/real_time_cv         [m[0;33m     36.96 %         36.96 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_mean      [m[0;33m     32089 us        32092 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_median    [m[0;33m     31687 us        31691 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_stddev    [m[0;33m     21619 us        21621 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_cv        [m[0;33m     67.37 %         67.37 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_mean      [m[0;33m     23035 us        23034 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_median    [m[0;33m     14797 us        14798 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_stddev    [m[0;33m     14277 us        14272 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_cv        [m[0;33m     61.98 %         61.96 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_mean      [m[0;33m     40770 us        40773 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_median    [m[0;33m     37421 us        37426 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_stddev    [m[0;33m     27248 us        27254 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_cv        [m[0;33m     66.83 %         66.84 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_mean      [m[0;33m     42427 us        42423 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_median    [m[0;33m     36766 us        36765 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_stddev    [m[0;33m     30222 us        30219 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_cv        [m[0;33m     71.23 %         71.23 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_mean      [m[0;33m     48131 us        48125 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_median    [m[0;33m     39878 us        39876 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_stddev    [m[0;33m     31411 us        31412 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_cv        [m[0;33m     65.26 %         65.27 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_mean      [m[0;33m     56596 us        56595 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_median    [m[0;33m     42594 us        42583 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_stddev    [m[0;33m     36453 us        36453 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_cv        [m[0;33m     64.41 %         64.41 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_mean      [m[0;33m     50097 us        50099 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_median    [m[0;33m     39105 us        39070 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_stddev    [m[0;33m     37096 us        37101 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_cv        [m[0;33m     74.05 %         74.06 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_mean      [m[0;33m     46470 us        46470 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_median    [m[0;33m     29503 us        29504 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_stddev    [m[0;33m     23298 us        23300 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_cv        [m[0;33m     50.13 %         50.14 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_mean      [m[0;33m     67013 us        67008 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_median    [m[0;33m     76342 us        76338 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_stddev    [m[0;33m     38666 us        38663 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_cv        [m[0;33m     57.70 %         57.70 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_mean       [m[0;33m     30251 us        30251 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_median     [m[0;33m     27365 us        27365 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_stddev     [m[0;33m     10132 us        10130 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/524288/real_time_cv         [m[0;33m     33.49 %         33.49 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_mean      [m[0;33m     53942 us        53938 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_median    [m[0;33m     51733 us        51732 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_stddev    [m[0;33m     25918 us        25915 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_cv        [m[0;33m     48.05 %         48.04 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_mean      [m[0;33m     68605 us        68611 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_median    [m[0;33m     76913 us        76902 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_stddev    [m[0;33m     33737 us        33740 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_cv        [m[0;33m     49.18 %         49.18 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_mean      [m[0;33m     68535 us        68525 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_median    [m[0;33m     77118 us        77032 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_stddev    [m[0;33m     34484 us        34480 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_cv        [m[0;33m     50.32 %         50.32 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_mean      [m[0;33m     69236 us        69237 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_median    [m[0;33m     56179 us        56181 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_stddev    [m[0;33m     48227 us        48227 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_cv        [m[0;33m     69.66 %         69.66 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_mean      [m[0;33m     55818 us        55818 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_median    [m[0;33m     54589 us        54592 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_stddev    [m[0;33m     34192 us        34188 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_cv        [m[0;33m     61.26 %         61.25 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_mean      [m[0;33m     84734 us        84681 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_median    [m[0;33m     77691 us        77699 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_stddev    [m[0;33m     60025 us        59940 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_cv        [m[0;33m     70.84 %         70.78 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_mean      [m[0;33m    107232 us       107221 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_median    [m[0;33m     80496 us        80491 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_stddev    [m[0;33m     61930 us        61925 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_cv        [m[0;33m     57.75 %         57.75 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_mean      [m[0;33m    102356 us       102362 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_median    [m[0;33m     57566 us        57573 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_stddev    [m[0;33m     55660 us        55662 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_cv        [m[0;33m     54.38 %         54.38 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_mean     [m[0;33m     59255 us        59254 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_median   [m[0;33m     55329 us        55331 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_stddev   [m[0;33m     18790 us        18791 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_cv       [m[0;33m     31.71 %         31.71 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_mean      [m[0;33m    132232 us       132221 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_median    [m[0;33m    153673 us       153655 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_stddev    [m[0;33m     62521 us        62519 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_cv        [m[0;33m     47.28 %         47.28 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_mean      [m[0;33m    119067 us       119053 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_median    [m[0;33m    151524 us       151518 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_stddev    [m[0;33m     61464 us        61459 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_cv        [m[0;33m     51.62 %         51.62 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_mean      [m[0;33m    116987 us       116986 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_median    [m[0;33m    148618 us       148623 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_stddev    [m[0;33m     61835 us        61834 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_cv        [m[0;33m     52.86 %         52.86 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_mean      [m[0;33m     69968 us        69962 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_median    [m[0;33m     55670 us        55670 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_stddev    [m[0;33m     31701 us        31704 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1048576/real_time_cv        [m[0;33m     45.31 %         45.32 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_mean      [m[0;33m    140632 us       140638 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_median    [m[0;33m    173219 us       173237 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_stddev    [m[0;33m    106853 us       106862 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_cv        [m[0;33m     75.98 %         75.98 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_mean     [m[0;33m    123803 us       123806 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_median   [m[0;33m    109788 us       109799 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_stddev   [m[0;33m     83178 us        83180 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_cv       [m[0;33m     67.19 %         67.19 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_mean      [m[0;33m    176713 us       176691 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_median    [m[0;33m    153028 us       153019 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_stddev    [m[0;33m    121954 us       121942 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_cv        [m[0;33m     69.01 %         69.01 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_mean      [m[0;33m    178442 us       178450 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_median    [m[0;33m    149616 us       149634 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_stddev    [m[0;33m    107914 us       107917 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_cv        [m[0;33m     60.48 %         60.47 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_mean      [m[0;33m    189991 us       189974 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_median    [m[0;33m    152882 us       152821 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_stddev    [m[0;33m    120090 us       120079 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_cv        [m[0;33m     63.21 %         63.21 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_mean      [m[0;33m    225714 us       225684 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_median    [m[0;33m    208418 us       208400 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_stddev    [m[0;33m    128224 us       128204 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_cv        [m[0;33m     56.81 %         56.81 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_mean      [m[0;33m    221952 us       221952 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_median    [m[0;33m    189303 us       189310 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_stddev    [m[0;33m    127600 us       127598 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_cv        [m[0;33m     57.49 %         57.49 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_mean     [m[0;33m    242772 us       242785 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_median   [m[0;33m    336777 us       336765 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_stddev   [m[0;33m    147575 us       147583 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_cv       [m[0;33m     60.79 %         60.79 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_mean     [m[0;33m    152344 us       152341 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_median   [m[0;33m    110383 us       110388 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_stddev   [m[0;33m     78699 us        78693 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_cv       [m[0;33m     51.66 %         51.66 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_mean      [m[0;33m    135061 us       135055 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_median    [m[0;33m    108459 us       108461 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_stddev    [m[0;33m     64183 us        64187 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2097152/real_time_cv        [m[0;33m     47.52 %         47.53 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_mean     [m[0;33m    262475 us       262489 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_median   [m[0;33m    299948 us       299985 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_stddev   [m[0;33m    153351 us       153352 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_cv       [m[0;33m     58.42 %         58.42 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_mean      [m[0;33m    317502 us       317398 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_median    [m[0;33m    304098 us       304081 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_stddev    [m[0;33m    240375 us       240397 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_cv        [m[0;33m     75.71 %         75.74 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_mean     [m[0;33m    322085 us       322054 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_median   [m[0;33m    307208 us       307199 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_stddev   [m[0;33m    212032 us       212001 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_cv       [m[0;33m     65.83 %         65.83 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_mean     [m[0;33m    369034 us       368985 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_median   [m[0;33m    307199 us       307187 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_stddev   [m[0;33m    208091 us       208054 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_cv       [m[0;33m     56.39 %         56.39 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_mean     [m[0;33m    393057 us       393057 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_median   [m[0;33m    309849 us       309860 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_stddev   [m[0;33m    249342 us       249339 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_cv       [m[0;33m     63.44 %         63.44 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_mean     [m[0;33m    404327 us       404349 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_median   [m[0;33m    343849 us       343878 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_stddev   [m[0;33m    306515 us       306531 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_cv       [m[0;33m     75.81 %         75.81 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_mean    [m[0;33m    331264 us       331261 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_median  [m[0;33m    223203 us       223213 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_stddev  [m[0;33m    206916 us       206911 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_cv      [m[0;33m     62.46 %         62.46 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_mean     [m[0;33m    516533 us       516454 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_median   [m[0;33m    596420 us       596420 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_stddev   [m[0;33m    240026 us       240164 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_cv       [m[0;33m     46.47 %         46.50 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_mean     [m[0;33m    455711 us       455591 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_median   [m[0;33m    592884 us       592763 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_stddev   [m[0;33m    236225 us       236158 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_cv       [m[0;33m     51.84 %         51.84 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_mean     [m[0;33m    428242 us       428195 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_median   [m[0;33m    588814 us       588726 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_stddev   [m[0;33m    205995 us       205968 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_cv       [m[0;33m     48.10 %         48.10 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_mean     [m[0;33m    558185 us       558118 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_median   [m[0;33m    600692 us       600659 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_stddev   [m[0;33m    293329 us       293303 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_cv       [m[0;33m     52.55 %         52.55 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_mean      [m[0;33m    266182 us       266175 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_median    [m[0;33m    216207 us       216209 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_stddev    [m[0;33m    124007 us       124005 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4194304/real_time_cv        [m[0;33m     46.59 %         46.59 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_mean    [m[0;33m    320608 us       320612 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_median  [m[0;33m    221887 us       221898 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_stddev  [m[0;33m    166650 us       166647 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_cv      [m[0;33m     51.98 %         51.98 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_mean     [m[0;33m    524121 us       524154 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_median   [m[0;33m    594287 us       594343 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_stddev   [m[0;33m    391791 us       391816 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_cv       [m[0;33m     74.75 %         74.75 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_mean     [m[0;33m    625413 us       625413 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_median   [m[0;33m    595379 us       595385 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_stddev   [m[0;33m    478156 us       478158 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_cv       [m[0;33m     76.45 %         76.45 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_mean     [m[0;33m    838839 us       838897 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_median   [m[0;33m    893781 us       893845 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_stddev   [m[0;33m    429146 us       429175 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_cv       [m[0;33m     51.16 %         51.16 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/536870912/real_time_mean    [m[0;33m    667044 us       667035 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/536870912/real_time_median  [m[0;33m    437519 us       437524 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/536870912/real_time_stddev  [m[0;33m    348033 us       348025 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/536870912/real_time_cv      [m[0;33m     52.18 %         52.17 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_mean     [m[0;33m    916078 us       915981 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_median   [m[0;33m   1176887 us      1176781 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_stddev   [m[0;33m    469469 us       469427 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_cv       [m[0;33m     51.25 %         51.25 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_mean     [m[0;33m    983570 us       983440 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_median   [m[0;33m   1183918 us      1183771 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_stddev   [m[0;33m    466852 us       466841 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_cv       [m[0;33m     47.47 %         47.47 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_mean     [m[0;33m   1001937 us      1001809 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_median   [m[0;33m   1185062 us      1184878 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_stddev   [m[0;33m    539349 us       539274 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/33554432/real_time_cv       [m[0;33m     53.83 %         53.83 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_mean    [m[0;33m    990161 us       989607 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_median  [m[0;33m   1339746 us      1339818 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_stddev  [m[0;33m    648218 us       646801 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_cv      [m[0;33m     65.47 %         65.36 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_mean     [m[0;33m    942098 us       942104 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_median   [m[0;33m   1178562 us      1178551 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_stddev   [m[0;33m    470943 us       470943 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_cv       [m[0;33m     49.99 %         49.99 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_mean      [m[0;33m    533727 us       533696 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_median    [m[0;33m    431641 us       431647 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_stddev    [m[0;33m    247393 us       247388 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8388608/real_time_cv        [m[0;33m     46.35 %         46.35 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1073741824/real_time_mean   [m[0;33m    657571 us       657574 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1073741824/real_time_median [m[0;33m    441952 us       441961 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1073741824/real_time_stddev [m[0;33m    329025 us       329029 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/1073741824/real_time_cv     [m[0;33m     50.04 %         50.04 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_mean    [m[0;33m   1267950 us      1268037 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_median  [m[0;33m   1195815 us      1195914 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_stddev  [m[0;33m    717465 us       717512 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_cv      [m[0;33m     56.58 %         56.58 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_mean    [m[0;33m   1464148 us      1463949 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_median  [m[0;33m   1202840 us      1202739 us   [m[0;36m        50[m
+[0;32mbenchReduceHPX/134217728/real_time_mean    [m[0;33m   1504383 us      1503606 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_median  [m[0;33m   1185021 us      1184928 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_stddev  [m[0;33m    929644 us       929394 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_cv      [m[0;33m     63.49 %         63.49 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_stddev  [m[0;33m   1102286 us      1100791 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_cv      [m[0;33m     73.27 %         73.21 %    [m[0;36m        50[m
+[m[m[0;32mbenchReduceHPX/67108864/real_time_mean     [m[0;33m   1518467 us      1518276 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_median   [m[0;33m   1202603 us      1202532 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_stddev   [m[0;33m    820370 us       820213 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/67108864/real_time_cv       [m[0;33m     54.03 %         54.02 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_mean    [m[0;33m   1701053 us      1381914 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_median  [m[0;33m   1341777 us      1341838 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_stddev  [m[0;33m   1171600 us       795041 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_cv      [m[0;33m     68.88 %         57.53 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2147483648/real_time_mean   [m[0;33m   1078361 us      1078359 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2147483648/real_time_median [m[0;33m    868076 us       868069 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2147483648/real_time_stddev [m[0;33m    525321 us       525320 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/2147483648/real_time_cv     [m[0;33m     48.71 %         48.71 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_mean    [m[0;33m   1730088 us      1729970 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_median  [m[0;33m   1956995 us      1956998 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_stddev  [m[0;33m    929942 us       929616 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_cv      [m[0;33m     53.75 %         53.74 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_mean    [m[0;33m   1576596 us      1576657 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_median  [m[0;33m    881607 us       881716 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_stddev  [m[0;33m    834004 us       833996 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_cv      [m[0;33m     52.90 %         52.90 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_mean     [m[0;33m    963421 us       963379 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_median   [m[0;33m    859639 us       859640 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_stddev   [m[0;33m    367904 us       367877 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/16777216/real_time_cv       [m[0;33m     38.19 %         38.19 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_mean    [m[0;33m   1940974 us      1920877 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_median  [m[0;33m   2349914 us      2348487 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_stddev  [m[0;33m   1112424 us      1062994 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_cv      [m[0;33m     57.31 %         55.34 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_mean    [m[0;33m   2042314 us      2039628 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_median  [m[0;33m   2379485 us      2379285 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_stddev  [m[0;33m   1170100 us      1164090 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_cv      [m[0;33m     57.29 %         57.07 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4294967296/real_time_mean   [m[0;33m   1543112 us      1542951 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4294967296/real_time_median [m[0;33m    885858 us       885876 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4294967296/real_time_stddev [m[0;33m   1004148 us      1003673 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/4294967296/real_time_cv     [m[0;33m     65.07 %         65.05 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_mean    [m[0;33m   2889461 us      2708698 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_median  [m[0;33m   2392510 us      2392268 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_stddev  [m[0;33m   2217570 us      1810210 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/134217728/real_time_cv      [m[0;33m     76.75 %         66.83 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/536870912/real_time_mean    [m[0;33m   3444800 us      2364890 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/536870912/real_time_median  [m[0;33m   3092638 us      2092704 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/536870912/real_time_stddev  [m[0;33m   2685500 us      1581344 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/536870912/real_time_cv      [m[0;33m     77.96 %         66.87 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_mean    [m[0;33m   4146143 us      3625839 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_median  [m[0;33m   2428967 us      2428995 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_stddev  [m[0;33m   3283804 us      2555367 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/268435456/real_time_cv      [m[0;33m     79.20 %         70.48 %    [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8589934592/real_time_mean   [m[0;33m   1980474 us      1962522 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8589934592/real_time_median [m[0;33m   1732134 us      1732115 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8589934592/real_time_stddev [m[0;33m    736867 us       669059 us   [m[0;36m        50[m
+[m[0;32mbenchReduceHPX/8589934592/real_time_cv     [m[0;33m     37.21 %         34.09 %    [m[0;36m        50[m
+[mLocality 1 is completly done
+mpirun: Forwarding signal 18 to job
+slurmstepd: error: *** JOB 37091 ON ziti-qdr008 CANCELLED AT 2023-08-02T14:25:58 ***

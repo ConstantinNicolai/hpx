@@ -124,7 +124,7 @@ private:
 
 void benchReduceHPX(benchmark::State& state)
 {
-	unsigned int size = 20;
+	unsigned int size = state.range(0);
  
     char const* const vector_name_1 =
         "partitioned_vector_1";
@@ -177,8 +177,14 @@ void benchReduceHPX(benchmark::State& state)
 		for(auto _ : state)
 		{
 			// Transform the values of view1 by adding the corresponding values from view2
-			hpx::transform(hpx::execution::par, view1.begin(), view1.end(), view2.begin(), view1.begin(),
-					[](int v, int y) { return alpha * v + y; });
+			benchmark::DoNotOptimize(hpx::transform(hpx::execution::par, view1.begin(), view1.end(), view2.begin(), view1.begin(),
+					[](int v, int y) { return alpha * v + y; }));
+			/*
+			//print the transformed vector partitions from the specific locality
+			for(int i = 0; i<view1.size(); i++){
+				hpx::cout << "locality: " << hpx::get_locality_id() <<  ", Addition: " << view1[i] << "\n" << std::flush;
+			}
+			*/
         	l.arrive_and_wait();
 		}
         
