@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=partitioned_vector_hpx
+#SBATCH -p qdr
+#SBATCH -N 2
+
+spack load hpx
+mpirun hostname
+##mpirun hello_world_distributed --hpx:ignore-batch-env --hpx:threads 2
+mpirun ./../build/main --hpx:ignore-batch-env --hpx:threads 2
+
