@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#SBATCH -p skylake 
+#SBATCH -w mp-skl2s24c
+#SBATCH --exclusive
+#SBATCH -o skylake.txt
+
+
+REPS=100
+
+export OMP_PLACES=threads # threads for scan, otherwise numa_domains
+export OMP_PROC_BIND=true
+
+
+ ./../build/scan-benchmark_skylake   --benchmark_time_unit=us --benchmark_out_format=csv --benchmark_out=scan_skylake.csv  \
+                                         --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
+                                         --benchmark_min_time=0.001 --benchmark_min_warmup_time=0.01
+
+./../build/transform-benchmark_skylake   --benchmark_time_unit=us --benchmark_out_format=csv --benchmark_out=transform_skylake.csv  \
+                                     --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
+                                     --benchmark_min_time=0.001 --benchmark_min_warmup_time=0.01
+
+./../build/reduction-benchmark_skylake   --benchmark_time_unit=us --benchmark_out_format=csv --benchmark_out=reduce_skylake.csv  \
+                                      --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
+                                      --benchmark_min_time=0.001 --benchmark_min_warmup_time=0.01
+
+
+

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#SBATCH -p qdr 
+#SBATCH -w ziti-qdr008
+#SBATCH --exclusive
+#SBATCH -o qdr.txt
+
+
+REPS=300
+
+export OMP_PLACES=threads # threads for scan, otherwise numa_domains
+export OMP_PROC_BIND=true
+
+
+
+./../build/scan-benchmark_qdr   --benchmark_repetitions=$REPS --benchmark_time_unit=us --benchmark_out_format=csv --benchmark_out=scan_qdr.csv \
+                                      --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
+                                      --benchmark_min_time=0.001 --benchmark_min_warmup_time=0.01
+
+./../build/reduction-benchmark_qdr   --benchmark_repetitions=$REPS --benchmark_time_unit=us --benchmark_out_format=csv --benchmark_out=reduction_qdr.csv \
+                                      --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
+                                      --benchmark_min_time=0.001 --benchmark_min_warmup_time=0.01
+
+./../build/transform-benchmark_qdr   --benchmark_time_unit=us --benchmark_out_format=csv --benchmark_out=transform_qdr.csv  \
+                                    --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
+                                    --benchmark_min_time=0.001 --benchmark_min_warmup_time=0.01
+
