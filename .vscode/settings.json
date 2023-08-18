@@ -48,6 +48,10 @@
 		"typeindex": "cpp",
 		"typeinfo": "cpp",
 		"string": "cpp",
-		"random": "cpp"
+		"random": "cpp",
+		"atomic": "cpp",
+		"condition_variable": "cpp",
+		"future": "cpp",
+		"thread": "cpp"
 	}
 }

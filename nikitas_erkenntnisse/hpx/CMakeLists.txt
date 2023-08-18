@@ -16,3 +16,7 @@ target_link_libraries(reduction benchmark::benchmark)
 add_executable(transform transform.cpp)
 target_link_libraries(transform HPX::hpx HPX::wrap_main HPX::iostreams_component HPX::partitioned_vector_component)
 target_link_libraries(transform benchmark::benchmark)
+
+add_executable(alternative_transform alternative_transform.cpp)
+target_link_libraries(alternative_transform HPX::hpx HPX::wrap_main HPX::iostreams_component HPX::partitioned_vector_component)
+target_link_libraries(alternative_transform benchmark::benchmark)

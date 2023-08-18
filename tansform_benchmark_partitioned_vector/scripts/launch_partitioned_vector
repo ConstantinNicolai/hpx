@@ -1,13 +1,21 @@
 #!/usr/bin/env bash
+
 #SBATCH --job-name=partitioned_vector_hpx
+#SBATCH -o outQDR_transfrom.txt
+
 #SBATCH -p qdr
 #SBATCH -N 3
+#SBATCH -n 3
 
 spack load hpx
 mpirun hostname
-##mpirun hello_world_distributed --hpx:ignore-batch-env --hpx:threads 2
-REPS=3
-mpirun ./../build/main --benchmark_out_format=csv --benchmark_out=hello_out.csv  \
-                                      --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
-                                      --benchmark_min_time=0.001 
 
+REPS=3
+mpirun ./../build/main --benchmark_out_format=csv --benchmark_out=transform_qdr.csv  \
+                       --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
+                       --benchmark_min_time=0.001
+
+#mpirun ./../build/main --hpx:ignore-batch-env --hpx:threads 1 \
+#					   --benchmark_time_unit=us --benchmark_out_format=csv --benchmark_out=transform_rome.csv \
+#                       --benchmark_report_aggregates_only=true --benchmark_repetitions=$REPS \
+#                       --benchmark_min_time=0.001 --benchmark_min_warmup_time=0.01

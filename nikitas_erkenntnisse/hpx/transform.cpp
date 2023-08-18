@@ -10,6 +10,7 @@
 #include <hpx/config.hpp>
 #include <hpx/algorithm.hpp>
 #include <hpx/hpx.hpp>
+#include <hpx/barrier.hpp>
 
 #include <benchmark/benchmark.h>
 
@@ -202,10 +203,35 @@ void benchReduceHPX(benchmark::State& state)
     }
 }
 
+void benchReduceHPXTesting(benchmark::State& state)
+{
+	unsigned int size = state.range(0);
+
+	std::string output = "Locality " + std::to_string(hpx::get_locality_id()) + " , before barrier " + "\n";
+	std::cout << output;
+	hpx::distributed::barrier("Test", 2);
+	output = "Locality " + std::to_string(hpx::get_locality_id()) + " , after barrier " + "\n";
+	std::cout << output;
+
+	for(auto _ : state)
+	{
+		output = "Locality " + std::to_string(hpx::get_locality_id()) + " , size " + std::to_string(size) + "\n";
+		std::cout << output;
+	}
+}
+
 int hpx_main(int argc, char* argv[])
 {
+	/*
 	::benchmark::Initialize(&argc, argv);
 	::benchmark::RunSpecifiedBenchmarks();
+	*/
+
+	std::string output = "Locality " + std::to_string(hpx::get_locality_id()) + " , before barrier " + "\n";
+	std::cout << output;
+	//hpx::barrier();
+	output = "Locality " + std::to_string(hpx::get_locality_id()) + " , after barrier " + "\n";
+	std::cout << output;
 
 	std::cout << "Locality " << hpx::get_locality_id() << " is completly done" << std::endl;
     return hpx::finalize();
@@ -249,4 +275,4 @@ int main(int argc, char* argv[])
     return hpx::init(argc, argv, init_args);
 }
 
-BENCHMARK(benchReduceHPX)->Apply(Args)->UseRealTime();
+BENCHMARK(benchReduceHPXTesting)->Apply(Args)->UseRealTime();
